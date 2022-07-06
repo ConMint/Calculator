@@ -85,6 +85,7 @@ equalsBtn.addEventListener('click', function() {
     split.pop();
     
     while (split.length >= 3) {
+    
     const firstNum = parseFloat(split[0]);
     const operator = split[1];
     const secondNum = parseFloat(split[2]);
@@ -94,15 +95,20 @@ equalsBtn.addEventListener('click', function() {
 
 
 
-    display2.innerText = roundResult(result)
+    display1.innerText = roundResult(result)
     split.shift();
     split.shift();
-    split[0] = result;
+    split.shift();
+    
+    
+    split.unshift(result)
+    console.log(split[0])
     console.log(typeof(split[0]))
     if (isNaN(split[0])) {
         display1.innerText = 'ERROR';
         display1.style.color = 'red';
         display2.innerText = '';
+        return
     } else {
         display1.style.color = 'black';
     }
