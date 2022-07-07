@@ -139,3 +139,19 @@ function roundResult(number) {
       .toString()
       .slice(0, -1)
   }
+
+
+  function makeNeg(number) {
+    if (display2.innerText != "") {
+        number = display2.innerText;
+        display2.innerText = (0 - number);
+    }
+    
+
+  }
+
+let signBtn = document.getElementById('changesign');
+
+signBtn.addEventListener('click', () => {
+    makeNeg();
+})
