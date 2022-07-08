@@ -145,6 +145,8 @@ function roundResult(number) {
     if (display2.innerText != "") {
         number = display2.innerText;
         display2.innerText = (0 - number);
+    } else {
+        display2.innerText += '-'
     }
     
 
