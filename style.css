@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    
+
 }
 
 .main {
@@ -9,7 +9,7 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .calculator {
@@ -32,13 +32,13 @@ body {
 
 .topbuttons {
     display: flex;
-    
+
     justify-content: space-between;
     height: 50px;
     margin-left: 20px;
     margin-right: 20px;
-   
-    
+
+
 }
 
 #clearbutton, #deletebutton {
@@ -58,7 +58,7 @@ body {
 }
 
 .lowerbuttons {
-    
+
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -67,7 +67,7 @@ body {
     margin-right: 20px;
     height: 250px;
     justify-content: space-between;
-    
+
 }
 
 .btn, .numbtn {
@@ -86,13 +86,12 @@ body {
 #display1, #display2 {
     height: 50px;
     width: 200px;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    font-size: 30px;
+    font-size: 20px;
     overflow: hidden;
-    font-size: 1vw;
 }
 
 #equalsBtn {
